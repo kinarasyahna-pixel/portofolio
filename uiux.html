@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design - Kinara Aurelya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #ffffff; color: #000000; }
+
+        nav { padding: 1.5rem 10%; display: flex; justify-content: space-between; border-bottom: 1px solid #eee; }
+        .back-btn { text-decoration: none; color: #000; font-weight: 500; }
+
+        header { text-align: center; padding: 60px 10%; }
+        header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 10px; }
+
+        /* Grid untuk Foto Portofolio */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 10% 80px 10%;
+        }
+
+        .project-item {
+            border: 1px solid #eee;
+            border-radius: 15px;
+            overflow: hidden;
+            background: #f9f9f9;
+            transition: 0.3s;
+        }
+
+        .project-item:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+        .project-item img {
+            width: 100%;
+            height: auto; /* Agar foto memanjang ke bawah tetap terlihat penuh */
+            display: block;
+        }
+
+        .desc { padding: 15px; text-align: center; border-top: 1px solid #eee; }
+        .desc h3 { font-size: 1rem; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="back-btn">← Back to Home</a>
+    </nav>
+
+    <header>
+        <h1>UI/UX Design</h1>
+        <p>Halaman ini menampilkan rancangan interface aplikasi dan website.</p>
+    </header>
+
+    <div class="gallery">
+        <div class="project-item">
+            <img src="glowvia.png" alt="Project UIUX"> <div class="desc"><h3>E-Commerce Website Design</h3></div>
+        </div>
+
+        <div class="project-item">
+            <img src="stary.png" alt="Project UIUX">
+            <div class="desc"><h3>Mobile App Period Tracker</h3></div>
+        </div>
+
+        <div class="project-item">
+            <img src="lofo.png" alt="Project UIUX">
+            <div class="desc"><h3>Mobile App Period Tracker</h3></div>
+        </div>
+    </div>
+
+</body>
+</html>
